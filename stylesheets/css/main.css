@@ -1,0 +1,256 @@
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+body .container {
+  font-size: 16px;
+}
+body .container #header {
+  top: 0;
+  width: 100%;
+  position: fixed;
+  background-color: #eee;
+}
+body .container #header #nav-bar {
+  padding: 10px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+body .container #header #nav-bar .product {
+  display: flex;
+  align-items: center;
+}
+body .container #header #nav-bar .product-image {
+  padding-right: 10px;
+}
+body .container #header #nav-bar .product-image img {
+  width: 60px;
+  height: 50px;
+  border-radius: 50%;
+}
+body .container #header #nav-bar .product-name {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+body .container #header #nav-bar ul {
+  display: flex;
+  list-style-type: none;
+}
+body .container #header #nav-bar ul li {
+  margin: 0 10px;
+  display: inline-block;
+}
+body .container #header #nav-bar ul li a {
+  all: unset;
+  cursor: pointer;
+}
+body .container main {
+  margin-top: 55px;
+  margin-bottom: 170px;
+}
+body .container main #section-one .banner {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 15%;
+  min-height: 100px;
+  justify-content: space-between;
+  background-image: linear-gradient(#fab341, #fab341);
+}
+body .container main #section-one .banner-text {
+  width: 50%;
+}
+body .container main #section-one .banner-text-head {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+body .container main #section-one .banner-text-body {
+  width: 80%;
+  line-height: 1.5;
+  font-size: 1.2em;
+}
+body .container main #section-one .banner-image {
+  width: 50%;
+}
+body .container main #section-one .banner-image img {
+  width: 100%;
+  height: 100%;
+}
+body .container main #section-two, body .container main #section-three {
+  width: 70%;
+  margin: 50px auto;
+}
+body .container main #section-two {
+  margin: 100px auto;
+}
+body .container main #section-two .features-text {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+}
+body .container main #section-two .features {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0 70px;
+}
+body .container main #section-two .features-card {
+  width: 33.33%;
+}
+body .container main #section-two .features-card-content {
+  padding: 15px;
+  margin: 0 20px;
+  min-height: 250px;
+  text-align: center;
+  border: 2px solid black;
+}
+body .container main #section-two .features-card-content-image {
+  margin: 10px 0;
+}
+body .container main #section-two .features-card-content-image img {
+  width: 100px;
+  height: 80px;
+  border-radius: 50%;
+}
+body .container main #section-two .features-card-content-text-head {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+body .container main #section-two .action {
+  display: flex;
+  flex-wrap: wrap;
+}
+body .container main #section-two .action-content {
+  width: 50%;
+}
+body .container main #section-two .action-content-text {
+  width: 80%;
+}
+body .container main #section-two .action-content-text-head {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+body .container main #section-two .action-content-text-body {
+  line-height: 1.5;
+}
+body .container main #section-two .action-video {
+  width: 50%;
+}
+body .container main #section-two .action-video iframe {
+  width: 100%;
+  height: 315px;
+}
+body .container main #section-three {
+  border: 15px dashed #fab341;
+}
+body .container main #section-three .form {
+  text-align: center;
+}
+body .container main #section-three .form-text {
+  margin: 30px 0;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+body .container main #section-three .form-email, body .container main #section-three .form-textarea {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+body .container main #section-three .form-email label, body .container main #section-three .form-textarea label {
+  display: inline-block;
+  margin-right: 20px;
+}
+body .container main #section-three .form-email input, body .container main #section-three .form-email textarea, body .container main #section-three .form-textarea input, body .container main #section-three .form-textarea textarea {
+  padding: 10px 20px;
+  font-style: italic;
+  border: 1px solid black;
+  color: rgba(0, 0, 0, 0.829);
+}
+body .container main #section-three .form-textarea {
+  display: flex;
+  justify-content: center;
+}
+body .container main #section-three .form input[type=submit] {
+  all: unset;
+  background: #fab341;
+  padding: 15px 30px;
+  margin: 20px 0 30px;
+  border: 1px solid black;
+}
+body .container main #section-three .form input[type=submit]:hover {
+  background: #b99151;
+}
+body .container footer {
+  background: #eee;
+  padding: 20px 0;
+  text-align: center;
+}
+body .container #section-one-link, body .container #section-two-link, body .container #section-three-link {
+  visibility: hidden;
+}
+@media (max-width: 800px) {
+  body .container {
+    display: block;
+  }
+  body .container #section-one .banner-text {
+    width: 100% !important;
+  }
+  body .container #section-one .banner-text-body {
+    width: 80% !important;
+  }
+  body .container #section-one .banner-image {
+    display: none;
+  }
+  body .container main #section-two .features {
+    display: block;
+  }
+  body .container main #section-two .features-card {
+    width: 100%;
+    margin: 30px 0;
+    line-height: 1.4;
+  }
+  body .container main #section-two .action {
+    display: block;
+  }
+  body .container main #section-two .action-content {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  body .container main #section-two .action-content-text-body {
+    line-height: 1.4;
+  }
+  body .container main #section-two .action-video {
+    width: 100%;
+  }
+  body .container main #section-two .action-video iframe {
+    height: 250px;
+  }
+  body .container main #section-three {
+    padding: 0 20px;
+  }
+  body .container main #section-three .form-email input {
+    width: 40%;
+  }
+}
+@media (max-width: 589px) {
+  body .container #header #nav-bar {
+    padding: 10px 20px;
+  }
+  body .container #header #nav-bar .product-image {
+    padding-right: 10px;
+  }
+  body .container #header #nav-bar .product-image img {
+    width: 40px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  body .container #header #nav-bar ul {
+    margin-left: 8px;
+  }
+  body .container #header #nav-bar ul li {
+    margin: 0 5px;
+    display: inline-block;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
